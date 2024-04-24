@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="2dp"
+    tools:ignore="MissingClass">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="2dp"
+        app:layout_boxedEdges="all">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="8sp"
+            android:text="@string/choose_step_count_text"
+            android:layout_marginTop="2dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/stepSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:gravity="center"
+            android:min="0"
+            android:max="200"
+            />
+
+        <TextView
+            android:id="@+id/txtStepCount"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:text="@string/step_count_text"
+            android:textSize="8sp"
+
+            />
+
+        <EditText
+            android:id="@+id/edtWeight"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="7sp"
+            android:background="@drawable/bordered_text_box"
+            android:imeOptions="actionSend"
+            android:textColorHint="@color/orange"
+            android:hint="@string/enter_weight_text"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/edtHeight"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="7sp"
+            android:background="@drawable/bordered_text_box"
+            android:imeOptions="actionSend"
+            android:textColorHint="@color/orange"
+            android:hint="@string/enter_height_text"
+            android:inputType="number"
+            android:layout_marginTop="2dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddSession"
+            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/add_session_btn_text"
+            android:textSize="8sp"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginTop="2dp"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnViewSession"
+            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/show_sessions_btn_text"
+            android:textSize="8sp"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginTop="2dp"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+</androidx.wear.widget.BoxInsetLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GP9Workout</string>
+    <string name="choose_step_count_text">Choose Step Count (Steps per Minute)</string>
+    <string name="step_count_text">%1$d</string>
+    <string name="enter_weight_text">Enter Weight in Kg.</string>
+    <string name="enter_height_text">Enter Height in cm.</string>
+    <string name="add_session_btn_text">Add Session</string>
+    <string name="show_sessions_btn_text">Show All Session</string>
+    <string name="workout_sessions_header_text">Workout Sessions</string>
+</resources>
